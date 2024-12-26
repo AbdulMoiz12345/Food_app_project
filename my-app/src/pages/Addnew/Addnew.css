@@ -1,0 +1,200 @@
+/* Addnew.css */
+.addnew-container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  margin-top: 30px;
+}
+
+.addnew-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.addnew-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.addnew-container label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.addnew-container select {
+  width: 95%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.addnew-container input[type='text'],
+.addnew-container input[type='number'],
+.addnew-container input[type='file'],
+.addnew-container textarea {
+  width: 93%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.addnew-container input[type='file'] {
+  margin: 10px 0;
+}
+
+.options-section {
+  margin-top: 20px;
+}
+
+.options-section h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.options-section label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.options-section button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.options-section button:hover {
+  background-color: #0056b3;
+}
+
+.price-input {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.price-input input {
+  margin-right: 10px;
+  width: 100px;
+}
+
+.price-input button {
+  width: 300px;
+  margin-left: 200px;
+  margin-top: 10px;
+}
+
+.added-options h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.added-options ul {
+  list-style: none;
+  padding: 0;
+}
+
+.added-options li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #d9534f;
+  cursor: pointer;
+  width: 300px;
+}
+
+.remove-btn:hover {
+  background-color: transparent;
+  color: #c82333;
+}
+
+.add_button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.add_button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .addnew-container {
+      width: 80%;
+      padding: 15px;
+  }
+
+  .price-input {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .price-input input {
+      margin-right: 0;
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .price-input button {
+      width: 100%;
+      margin-left: 0;
+  }
+
+  .remove-btn {
+      width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .addnew-container {
+      width: 95%;
+      padding: 10px;
+  }
+
+  .addnew-container h2 {
+      font-size: 1.5rem;
+  }
+
+  .options-section button, .add_button {
+      width: 100%;
+  }
+
+  .price-input button {
+      margin-left: 0;
+  }
+
+  .added-options li {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .remove-btn {
+      margin-top: 10px;
+      width: 100%;
+  }
+}

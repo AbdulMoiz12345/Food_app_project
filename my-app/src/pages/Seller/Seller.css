@@ -1,0 +1,91 @@
+/* Seller.css */
+.product_box{
+  margin-bottom: 500px;
+}
+/* Styling for the Product Heading */
+.product {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Search Bar Styling */
+.search-bar-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+}
+
+.search-bar:focus {
+  border-color: #4caf50;
+}
+
+/* Seller Products Grid */
+.seller-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product {
+    font-size: 1.5rem;
+  }
+
+  .search-bar {
+    width: 90%;
+  }
+}
+
+
+
+    /* Responsive Design */
+@media (min-width: 1400px) {
+  .seller-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1399px) {
+  .seller-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .seller-products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .seller-products {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+  

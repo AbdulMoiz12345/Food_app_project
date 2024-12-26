@@ -1,0 +1,230 @@
+/* General Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 80vh; /* Make the modal scrollable */
+}
+
+.modal-box h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+button.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+button.close-btn:hover {
+  color: #d9534f;
+}
+
+.modal-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.modal-box label {
+  font-size: 16px;
+  color: #333;
+}
+
+.modal-box input[type="text"],
+.modal-box input[type="file"],
+.modal-box input[type="number"],
+.modal-box select,
+.modal-box textarea {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.modal-box textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.modal-box select {
+  padding: 10px;
+}
+
+.options-section {
+  margin-top: 20px;
+}
+
+.options-section h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.options-section label {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+.price-input {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.added-options {
+  margin-top: 15px;
+}
+
+.added-options h4 {
+  font-size: 18px;
+  color: #555;
+}
+
+.added-options ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.added-options li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+}
+
+.added-options button {
+  background: none;
+  border: none;
+  color: #d9534f;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.added-options button:hover {
+  color: #c9302c;
+}
+
+.modal-box button[type="submit"] {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-box button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .modal-box {
+    padding: 15px;
+    width: 90%; /* Decrease width for smaller screens */
+  }
+
+  .modal-box h2 {
+    font-size: 20px;
+  }
+
+  button.close-btn {
+    font-size: 18px;
+  }
+
+  .modal-box label {
+    font-size: 14px;
+  }
+
+  .modal-box input[type="text"],
+  .modal-box input[type="file"],
+  .modal-box input[type="number"],
+  .modal-box select,
+  .modal-box textarea {
+    font-size: 12px;
+  }
+
+  .options-section h4 {
+    font-size: 16px;
+  }
+
+  .options-section label {
+    font-size: 12px;
+    width: 48%; /* Adjust to 2 items per row */
+  }
+
+  .price-input {
+    flex-direction: column;
+  }
+
+  .added-options li {
+    font-size: 14px;
+  }
+
+  .modal-box button[type="submit"] {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-box {
+    padding: 10px;
+    width: 85%; /* Decrease width for even smaller screens */
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  button.close-btn {
+    font-size: 16px;
+  }
+
+  .options-section label {
+    font-size: 12px;
+    width: 100%; /* Stack all options in a single column */
+  }
+
+  input[type="text"],
+  input[type="file"],
+  input[type="number"],
+  select,
+  textarea {
+    font-size: 10px;
+  }
+
+  button[type="submit"] {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+

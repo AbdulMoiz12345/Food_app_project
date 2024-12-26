@@ -1,0 +1,373 @@
+/* Empowerment Box Styles */
+/* Empowerment Box Styles */
+.empowerment-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+  background-image: url("../../assets/background.png"); /* Use pic7 as background */
+  background-size: cover;
+  background-position: center;
+  color: white; /* Text should contrast with the background */
+  position: relative;
+  z-index: 1;
+  height: 700px;
+}
+
+.empowerment-box h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.empowerment-box p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: white;
+}
+
+/* Overlay to enhance text readability */
+.empowerment-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Add a dark overlay */
+  z-index: -1;
+}
+/* Login Button Styles */
+.login-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #ff5722; /* Button color */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 90px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #e64a19; /* Darker shade on hover */
+}
+
+/* Make button responsive */
+@media (max-width: 480px) {
+  .login-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .empowerment-box h1 {
+    font-size: 2rem;
+  }
+  .empowerment-box p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .empowerment-box {
+    padding: 30px 10px;
+  }
+  .empowerment-box h1 {
+    font-size: 1.5rem;
+  }
+  .empowerment-box p {
+    font-size: 0.9rem;
+  }
+}
+
+.food {
+ color: black;
+ margin-left: 300px;
+ font-size: 30px;
+}
+.food-slideshow {
+  width: 90%; /* Increase slideshow width */
+  max-width: 1200px; /* Optional max-width for responsiveness */
+  margin: 20px auto;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.food-slide-container {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 400px; /* Increase container height */
+  overflow: hidden;
+}
+
+.food-slide {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.food-description {
+  padding: 30px;
+  font-size: 30px;
+}
+
+.food-description p {
+ 
+  font-size: 20px;
+}
+.food-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Circular image */
+  object-fit: cover;
+}
+
+.active {
+  opacity: 1; /* Highlight active slide */
+  z-index: 2;
+}
+
+
+#testimonials {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f5f5f5;
+}
+
+#testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #5e4b8b;
+}
+
+.testimonial-carousel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  transition: transform 0.4s ease; /* For smooth transition */
+}
+
+.testimonial-item {
+  min-width: 300px;
+  text-align: center;
+  padding: 20px;
+  margin: 0 10px;
+  transition: transform 0.4s ease;
+}
+
+.testimonial-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #333;
+  padding: 10px;
+  position: relative;
+}
+
+/* Carousel Animation */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Default animation for larger screens */
+.testimonial-carousel {
+  animation: slide 10s linear infinite;
+}
+
+.testimonial-item:last-child {
+  margin-right: 0;
+}
+
+
+/* General styling for the description section */
+#description {
+padding: 60px 20px;
+background-color: #5e4b8b; /* Dark purple background */
+color: white;
+text-align: center;
+margin-bottom: 150px;
+}
+
+.description-title {
+font-size: 2.5rem;
+color: #ffcc00; /* Yellow text for the title */
+margin-bottom: 50px;
+}
+
+/* Grid layout for the description points */
+.description-grid {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+gap: 30px;
+}
+
+.description-item {
+padding: 20px;
+background-color: rgba(255, 255, 255, 0.1); /* Slight transparent background for items */
+border-radius: 10px;
+transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.description-item:hover {
+transform: translateY(-10px);
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Icon styling */
+.icon {
+font-size: 4rem; /* Large icon size */
+color: #ffcc00;  /* Yellow color for icons */
+margin-bottom: 20px;
+}
+
+/* Heading for each description item */
+.description-item h3 {
+font-size: 1.5rem;
+color: #ffcc00; /* Yellow text for headings */
+margin-bottom: 10px;
+}
+
+.description-item p {
+font-size: 1rem;
+color: #f0f0f0;
+}
+
+/* Responsive layout for tablets and smaller screens */
+/* For screens up to 1024px, keep 5 columns but reduce icon and heading sizes */
+@media (max-width: 1024px) {
+.description-grid {
+    grid-template-columns: repeat(5, 1fr); /* Keep 5 columns */
+}
+
+.icon {
+    font-size: 2.5rem; /* Reduce icon size */
+}
+
+.description-item h3 {
+    font-size: 1rem; /* Smaller heading size */
+}
+
+.description-item p {
+    display: none; /* Hide paragraph text */
+}
+}
+
+/* For screens up to 768px, adjust for mobile view */
+@media (max-width: 768px) {
+.description-grid {
+    grid-template-columns: 1fr; /* Single column on mobile */
+}
+
+.icon {
+    font-size: 2rem; /* Further reduce icon size for mobile */
+}
+
+.description-item h3 {
+    font-size: 0.9rem; /* Smaller heading size */
+}
+
+.description-item p {
+    display: none; /* Continue hiding paragraph text */
+}
+
+
+
+.icon {
+    font-size: 3.5rem; /* Slightly reduce icon size on mobile */
+}
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .testimonial-carousel {
+      animation: slide 8s linear infinite; /* Faster for smaller screens */
+  }
+
+  .testimonial-item {
+      min-width: 280px; /* Adjust item width */
+  }
+}
+
+@media (max-width: 900px) {
+  .testimonial-carousel {
+      display: flex; /* Use flex to show all testimonials */
+      flex-wrap: wrap; /* Allow wrapping to new lines */
+      justify-content: center; /* Center items */
+      animation: none; /* Disable animation */
+  }
+
+  .testimonial-item {
+      min-width: 100%; /* Allow each item to take full width */
+      margin: 10px 0; /* Add margin between items */
+  }
+
+  .testimonial-img {
+      width: 100px;
+      height: 100px;
+  }
+
+  .testimonial-text {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-item {
+      min-width: 100%; /* Full width for all items */
+  }
+
+  .testimonial-img {
+      width: 80px; /* Smaller image */
+      height: 80px; /* Smaller image */
+  }
+
+  .testimonial-text {
+      font-size: 0.9rem; /* Smaller text */
+  }
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+ 
+
+  .food-slideshow h2 {
+    font-size: 2rem;
+  }
+
+  .food-description {
+    width: 80%; /* Text takes up more space on smaller screens */
+    text-align: center;
+  }
+
+  .food-image-box {
+    width: 80%; /* Image takes up more space on smaller screens */
+  }
+  .food{
+    margin-left: 20%;
+  }
+}
