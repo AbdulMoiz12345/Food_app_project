@@ -1,0 +1,50 @@
+footer {
+    background-color: #5e4b8b; /* Background color */
+    color: white; /* Text color */
+    text-align: center; /* Centered text */
+    padding: 30px; /* Increased padding */
+    position: relative; /* For animation */
+    overflow: hidden; /* Prevent overflow of pseudo-elements */
+    margin-top: 200px; /* Footer sticks to the bottom */
+  }
+  
+  footer p {
+    margin-bottom: 10px; /* Space between paragraph and social media links */
+    font-size: 1.2rem; /* Larger font size */
+    animation: fadeIn 0.5s ease; /* Initial fade-in animation */
+  }
+  
+  .social-media {
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Centered items */
+    gap: 20px; /* Space between icons */
+  }
+  
+  .social-media a {
+    color: white; /* Icon color */
+    font-size: 1.5rem; /* Icon size */
+    transition: transform 0.3s, color 0.3s; /* Transition for scaling and color */
+  }
+  
+  .social-media a:hover {
+    transform: scale(1.2); /* Scale up on hover */
+    color: #ffcc00; /* Change color on hover */
+  }
+  
+  footer .copy-right {
+    margin-top: 20px; /* Space between social media links and copy right */
+    font-size: 1rem; /* Smaller font size */
+  }
+  
+  /* Animation for fade-in effect */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
